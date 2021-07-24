@@ -1,15 +1,102 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* {
+  /*margin: 0;*/
+  /*padding: 0;*/
+  box-sizing: border-box;
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+
+
+/*topページ*/
+.top {
+  margin: 33px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.hometop {
+  margin: 33px;
+}
+
+.start {
+  margin: 33px;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+a {
+  cursor: pointer;
+  color: black;
+  text-decoration: underline;
+  padding: auto;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+}
+
+/*indexページ*/
+
+
+.index {
+  margin: 33px;
+}
+
+table {
+  font-size: 13px;
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+    
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+th {
+  display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+td {
+  padding: 1px 5px 7px 5px;
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+/*index 新規投稿ページ*/
+
+.field {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+}
