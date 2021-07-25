@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   root to: 'books#top'
   get 'top' => 'books#top'
   resources :books
-  # resources :homes
+  delete 'books/:id' => 'books#destroy', as: 'destroy_book'
 end

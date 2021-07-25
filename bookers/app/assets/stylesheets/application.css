@@ -1,10 +1,16 @@
-* {
+/** {*/
   /*margin: 0;*/
   /*padding: 0;*/
-  box-sizing: border-box;
-  font-family: verdana, arial, helvetica, sans-serif;
-}
+/*  box-sizing: border-box;*/
+/*  font-family: verdana, arial, helvetica, sans-serif;*/
+/*}*/
 
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: verdana, arial, helvetica, sans-serif;
+    line-height: 18px;
+}
 
 /*topページ*/
 .top {
@@ -45,7 +51,7 @@ a:hover {
 /*indexページ*/
 
 
-.index {
+.indexbox {
   margin: 33px;
 }
 
@@ -93,10 +99,109 @@ td {
 
 /*index 新規投稿ページ*/
 
-.field {
+.field{
   margin-bottom: 10px;
 }
 
-label {
-  display: block;
+.field_with_errors {
+    padding: 2px;
+    background-color: red;
+    display: table;
 }
+
+
+
+.formtitle {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+/*showページ*/
+.show {
+  margin: 33px;
+}
+
+.show > p {
+  margin: 33px
+}
+
+/*editページ*/
+.edit {
+  margin: 33px 0px 10px 33px;
+}
+
+.editlink {
+  margin: 0px 33px;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+/*flashメッセージ*/
+.notice {
+  color: green
+}
+
+/*エラーメッセージ*/
+
+.errormes {
+    width: 450px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .errormes h4 {
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0;
+    background-color: #c00;
+    color: #fff;
+  }
+  
+  .errormes ul {
+    margin: 33px;
+}
+  
+  .errormes ul li {
+    font-size: 12px;
+    list-style: square;
+    padding-bottom: 5px;
+}
+
+
+label {
+  font-size: 13px;
+    display: block;
+}
+
+
+.editerrormes {
+    width: 450px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 0;
+    margin-bottom: 15px;
+    background-color: #f0f0f0;
+  }
+
+.editerrormes h4 {
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    background-color: #c00;
+    color: #fff;
+  }
+  
+  .editerrormes ul {
+    margin: 33px;
+}
+  
+  .editerrormes ul li {
+    font-size: 12px;
+    list-style: square;
+    padding-bottom: 5px;
+}
+

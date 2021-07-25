@@ -1,14 +1,21 @@
+<div class ="show">
+<p class ="notice"><%= flash[:notice] %></p>
 
-    <p id="notice"></p>
-
-<p>
+<p class ="showtitle">
   <strong>Title:</strong>
-  <%= book.title %>
+  <%= @book.title %>
 </p>
 
 <p>
   <strong>Body:</strong>
-  <%= book.body %>
+  <%= @book.body %>
 </p>
-<%= link_to "Edit", book_path %>
-<%= link_to "Back", book_path, method: :delete %>
+
+</div>
+
+
+<p class ="start">
+<%= link_to "Edit", edit_book_path %>
+|
+<%= link_to "Back", books_path %>
+</p>
